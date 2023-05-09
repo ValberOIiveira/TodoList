@@ -19,7 +19,7 @@ const deleteTask = async (req,res) => {
 
   await taskModel.deleteTask(id);
 
-  return res.status(204).json({message : 'Task deleted successfully'});
+  return res.status(200).json({message : 'Task deleted successfully'});
 
 
 };
@@ -30,7 +30,7 @@ const updateTask = async (req, res) => {
 
   await taskModel.updateTask(id, req.body);
 
-  return res.status(204).json({message: 'Task updated successfully'});
+  return res.status(200).json({message: 'Task updated successfully'});
 
 };
 
